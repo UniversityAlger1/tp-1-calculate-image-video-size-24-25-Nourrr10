@@ -5,8 +5,8 @@
 // Return value
 //   grayScale size of the image Bitmap (in byte)
 float grayScaleImage(int w, int h) {
-   // YOUR CODE HERE - BEGIN
-
-   // YOUR CODE HERE - END
-   return 0;
+   return w*h; 
 }
+//int main (){
+//   printf("the size of grayScale image is :%.2f byte",grayScaleImage(300,200));
+//}
