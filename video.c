@@ -9,9 +9,7 @@
 // Return value
 //   colored video size (based on the unit passed parametter)
 float video(int w, int h, int durationMovie, int durationCredits, int fps, char* unit) {
-   float tailleColorPhoto=(w*h*3)*durationMovie*fps;
-   float tailleBwPhoto=(w*h)*durationCredits*fps;
-   float tailleOctect=tailleColorPhoto+ tailleBwPhoto;
+   float tailleOctect=((w*h*3)*durationMovie*fps)+((w*h)*durationCredits*fps);
     if (unit == NULL || strcmp(unit, "bt") == 0) {
         return tailleOctect;
     } else if (strcmp(unit, "ko") == 0) {
